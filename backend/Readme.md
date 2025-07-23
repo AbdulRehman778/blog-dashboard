@@ -7,7 +7,7 @@ A simple full stack blog app with user authentication, post creation, and protec
 ## 📦 Tech Stack
 
 ### Frontend
-- Angular 17
+- Angular 19
 - PrimeNG
 - RxJS
 - Angular Reactive Forms
@@ -53,14 +53,12 @@ A simple full stack blog app with user authentication, post creation, and protec
 ```bash
 git clone https://github.com/AbdulRehman778/blog-dashboard.git
 cd blog-app/backend
-```
 
 ### 2. Install Dependencies
 
 ```bash
 npm install
 ```
-
 ### 3. Setup PostgreSQL DB
 Open pgAdmin or DBeaver and:
 
