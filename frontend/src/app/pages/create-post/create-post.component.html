@@ -1,0 +1,28 @@
+<p-toast></p-toast>
+<div class="card flex flex-col gap-4">
+    <div class="font-semibold text-xl">Create Posts</div>
+    <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+
+            <div class="flex flex-col gap-2  mb-2">
+                <label for="name1">Title</label>
+                <input formControlName="title" class="w-full md:w-[30rem]" pInputText id="name1" type="text" />
+                 <small class="text-red-500" *ngIf="postForm.get('title')?.touched && postForm.get('title')?.hasError('required')">
+                    Title is required.
+                </small>
+            </div>
+            <div class="flex flex-col gap-2  mb-2">
+                <label for="Body">Body</label>
+                <input pInputText id="Body" type="text" class="w-full md:w-[30rem]"
+                formControlName="body" />
+                  <small class="text-red-500" *ngIf="postForm.get('body')?.touched && postForm.get('body')?.hasError('required')">
+                    Body is required.
+                    </small>
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="author">Author</label>
+                <input pInputText id="author" type="text" class="w-full md:w-[30rem]" formControlName="author" [disabled]="true"/>
+            </div>
+             <p-button label="Create" styleClass="w-full md:w-[10rem] mt-4" type="submit"></p-button>
+
+    </form>
+</div>

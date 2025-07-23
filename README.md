@@ -71,6 +71,8 @@ Save username/password (e.g., postgres/yourpassword)
 ### 4. Configure .env
 Create a file .env inside backend/:
 Add DATABASE_URL and JWT_SECRET
+DATABASE_URL="postgresql://postgres:root@localhost:5432/postgres"
+JWT_SECRET=skjw9r8sdf78sdfg8732g7sdf78sdfg87
 
 ### 5. Run Migrations
 
